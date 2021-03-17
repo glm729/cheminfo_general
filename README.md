@@ -14,7 +14,7 @@ All of the work currently held in this repository was produced under contract
 to the Australian National Phenome Centre, Murdoch University.
 
 File and variable naming and documentation may be rather patchy!  Please [post
-a ticket](https://github.com/glm729/cheminfo/issues/new) if you think there is
-something I should clarify or improve.  Furthermore, considering I'm fairly new
-to web development in general, I may be somewhat unconventional in my methods,
-so any guidance or recommendations are most welcome.
+a ticket](https://github.com/glm729/cheminfo_general/issues/new) if you think
+there is something I should clarify or improve.  Furthermore, considering I'm
+fairly new to web development in general, I may be somewhat unconventional in
+my methods, so any guidance or recommendations are most welcome.
