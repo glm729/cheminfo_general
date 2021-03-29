@@ -4,7 +4,7 @@ let txt = API.getData("txtKegg").resurrect();
 // - Split text into per-compound data by triple-slash
 // - Split each entry by newline and filter empty
 // - Push new array to accumulator if length > 0
-let data = txt.split(/\/\/\//).slice(0, 6).reduce((a, c) => {
+let data = txt.split(/\/\/\//).reduce((a, c) => {
   let rs = c.split(/\n/).filter(s => s !== '');
   if (rs.length > 0) a.push(rs);
   return a;
