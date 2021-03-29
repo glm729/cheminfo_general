@@ -2,12 +2,13 @@
 let txt = API.getData("txtKegg").resurrect();
 
 // - Split text into per-compound data by triple-slash
-// - Split compound data by newline and filter empty
-// - Filter empty data from overall array
-let data = txt
-  .split(/\/\/\//)
-  .map(t => t.split(/\n/).filter(s => s !== ''))
-  .filter(e => e.length > 0);
+// - Split each entry by newline and filter empty
+// - Push new array to accumulator if length > 0
+let data = txt.split(/\/\/\//).slice(0, 6).reduce((a, c) => {
+  let rs = c.split(/\n/).filter(s => s !== '');
+  if (rs.length > 0) a.push(rs);
+  return a;
+}, new Array());
 
 // Sift the data into segmented components
 let segmented = data.map(d => segmentKeggEntry(d));
